@@ -1,0 +1,724 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*Iphone*/
+@media screen and (min-width: 320px) and (max-width: 739px) {
+  .header {
+    height: 470px;
+  }
+  .header .navbar {
+    z-index: 999;
+  }
+  .header .navbar .container {
+    height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .navbar .container a .logo {
+    width: 120px;
+    height: 88px;
+  }
+  .header .navbar .container .bar_menu {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    display: block;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 100px;
+    cursor: pointer;
+  }
+  .header .navbar .container .search {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    display: block;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 100px;
+    cursor: pointer;
+  }
+  .header .navbar .container .navbar-collapse {
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+    background-color: white;
+    -webkit-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+    min-height: 900px;
+  }
+  .header .navbar .container .navbar-collapse .navbar-nav li a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 80px;
+    text-align: center;
+    padding: 0 15px;
+    color: #000;
+  }
+  .header .navbar .container .navbar-collapse .navbar-nav li a:hover {
+    color: #9c0;
+  }
+  .header .navbar .container .navbar-collapse .close_menu {
+    font-size: 2.5rem;
+    color: #000;
+    position: fixed;
+    top: 22px;
+    right: 22px;
+    cursor: pointer;
+  }
+  .header .navbar .container .menu.show {
+    z-index: 9999;
+    -webkit-animation: dropdown 0.8s;
+            animation: dropdown 0.8s;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  @-webkit-keyframes dropdown {
+    form {
+      opacity: 0;
+      visibility: hidden;
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  @keyframes dropdown {
+    form {
+      opacity: 0;
+      visibility: hidden;
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .header .slide {
+    z-index: 1;
+  }
+  .header .slide .carousel-inner .carousel-item .bg {
+    height: 270px;
+  }
+  .header .slide .carousel-inner .carousel-item img {
+    height: 270px;
+  }
+  .header .slide .carousel-inner .carousel-item .carousel-caption {
+    display: none;
+  }
+  .header .search_tour {
+    position: absolute;
+    bottom: 0%;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    z-index: 111;
+  }
+  .header .search_tour select,
+  .header .search_tour .btn_search {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    outline: none !important;
+    border-color: rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    height: 50px;
+  }
+  .header .search_tour .btn_search {
+    padding-bottom: 6px;
+    font-size: 1.8rem;
+    background: #9c0;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Piedra", cursive;
+  }
+  .header_head {
+    width: 100%;
+    height: 170px;
+  }
+  .body .feature_new .limit_tour .row div .card {
+    width: 264px;
+  }
+  .body .city div .city_body {
+    display: none;
+  }
+  .body .city:hover .destination_tour {
+    opacity: 1;
+    visibility: visible;
+  }
+  .content {
+    padding-left: 20px;
+  }
+  .content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+  }
+  .content i {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+  }
+  .content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: none;
+    text-align: none;
+  }
+  .content p:nth-child(3) {
+    margin-top: 30px;
+  }
+  .content .detail_tour div .desktop {
+    display: none;
+  }
+  .about .row div img {
+    width: 277px;
+    margin-top: 50px;
+  }
+  .view_all_tour {
+    display: none;
+  }
+  .fa-chevron-up {
+    font-size: 1.8rem;
+    font-weight: none;
+    line-height: none;
+    text-align: none;
+    padding: 10px 12px;
+    background: #34b;
+    color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    right: 3%;
+    bottom: 100px;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 9999;
+  }
+}
+
+/*Tablet */
+@media screen and (min-width: 739px) and (max-width: 1023px) {
+  .header {
+    height: 770px;
+  }
+  .header .navbar {
+    z-index: 999;
+  }
+  .header .navbar .container {
+    height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .navbar .container a .logo {
+    width: 200px;
+    height: 135px;
+  }
+  .header .navbar .container .bar_menu {
+    position: absolute;
+    left: 10%;
+    top: 28%;
+    display: block;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 100px;
+    cursor: pointer;
+  }
+  .header .navbar .container .search {
+    position: absolute;
+    right: 10%;
+    top: 28%;
+    display: block;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 100px;
+    cursor: pointer;
+  }
+  .header .navbar .container .navbar-collapse {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+    background-color: white;
+    -webkit-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+    min-height: 900px;
+  }
+  .header .navbar .container .navbar-collapse .navbar-nav li a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+    padding: 0 15px;
+    color: #000;
+  }
+  .header .navbar .container .navbar-collapse .navbar-nav li a:hover {
+    color: #9c0;
+  }
+  .header .navbar .container .navbar-collapse .close_menu {
+    font-size: 2.5rem;
+    color: #000;
+    position: fixed;
+    top: 32px;
+    right: 30px;
+    cursor: pointer;
+  }
+  .header .navbar .container .menu.show {
+    -webkit-animation: dropdown 0.8s;
+            animation: dropdown 0.8s;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  @-webkit-keyframes dropdown {
+    form {
+      opacity: 0;
+      visibility: hidden;
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  @keyframes dropdown {
+    form {
+      opacity: 0;
+      visibility: hidden;
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .header .slide {
+    z-index: 1;
+  }
+  .header .slide .carousel-inner .carousel-item .bg {
+    height: 570px;
+  }
+  .header .slide .carousel-inner .carousel-item img {
+    height: 570px;
+  }
+  .header .search_tour {
+    position: absolute;
+    bottom: 0%;
+    top: 78%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    z-index: 111;
+  }
+  .header .search_tour select,
+  .header .search_tour .btn_search {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    outline: none !important;
+    border-color: rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    height: 50px;
+  }
+  .header .search_tour .btn_search {
+    padding-bottom: 6px;
+    font-size: 1.8rem;
+    background: #9c0;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Piedra", cursive;
+  }
+  .header_head {
+    width: 100%;
+    height: 180px;
+  }
+  .body .feature_new .limit_tour .row div .card {
+    width: 330px;
+  }
+  .body .city div .city_body {
+    display: none;
+  }
+  .body .city:hover .destination_tour {
+    opacity: 1;
+    visibility: visible;
+  }
+  .content {
+    padding-left: 20px;
+  }
+  .content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+  }
+  .content i {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+  }
+  .content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: none;
+    text-align: none;
+  }
+  .content p:nth-child(3) {
+    margin-top: 30px;
+  }
+  .content .city div {
+    padding: 0px;
+    position: relative;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  .content .city div img {
+    height: 500px;
+    width: 100%;
+  }
+  .content .city div .destination_tour {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 8px 15px;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .content .city div .city_body {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .content .city div .city_body h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+  }
+  .content .city div .city_body p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: none;
+    text-align: none;
+  }
+  .content .city div .city_body .btn {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+    position: absolute;
+    bottom: 20%;
+  }
+  .content .city div:hover .destination_tour {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .content .city div:hover .city_body {
+    -webkit-animation: city_dropup 1s;
+            animation: city_dropup 1s;
+    opacity: 1;
+    visibility: visible;
+  }
+  @-webkit-keyframes city_dropup {
+    from {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  @keyframes city_dropup {
+    from {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  .content .row div .card {
+    width: 350px;
+    height: 438px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .content .row div .card:hover img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .content .row div .card .card-img {
+    position: relative;
+    overflow: hidden;
+  }
+  .content .row div .card .card-img img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .content .row div .card .destination_tour {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 8px 15px;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .content .row div .card .card-body a {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+    text-decoration: none;
+    color: #000;
+  }
+  .content .row div .card .card-body a:hover {
+    color: #9c0;
+  }
+  .content .row div .card .card-body p,
+  .content .row div .card .card-body strike {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .content .row div .card .card-body span {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+    color: #f81;
+    margin-right: 20px;
+  }
+  .content .row div .card .view_more {
+    height: 55px;
+    position: relative;
+  }
+  .content .row div .card .view_more .btn {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+    background: #34b;
+    color: #fff;
+    height: 100%;
+    padding: 0px 20px;
+    position: absolute;
+    left: 0;
+    width: 50%;
+  }
+  .content .row div .card .view_more .btn:hover {
+    background: #9c0;
+  }
+  .content .detail_tour div .desktop {
+    display: none;
+  }
+}
+
+/*PC màn hình nhỏ*/
+@media screen and (min-width: 1024px) and (max-width: 1204px) {
+  .header {
+    height: 770px;
+  }
+  .header .slide .carousel-inner .carousel-item .bg {
+    height: 770px;
+  }
+  .header .slide .carousel-inner .carousel-item img {
+    height: 770px;
+  }
+  .header_head {
+    width: 100%;
+    height: 170px;
+  }
+  .about .row div img {
+    width: 450px;
+    margin-top: 90px;
+  }
+  .body .feature_new .limit_tour .row div .card {
+    width: 435px;
+  }
+  .content {
+    padding-left: 20px;
+  }
+  .content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+  }
+  .content i {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+  }
+  .content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: none;
+    text-align: none;
+  }
+  .content p:nth-child(3) {
+    margin-top: 30px;
+  }
+  .content .row div .card {
+    width: 305px;
+    height: 438px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .content .row div .card:hover img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .content .row div .card .card-img {
+    position: relative;
+    overflow: hidden;
+  }
+  .content .row div .card .card-img img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .content .row div .card .destination_tour {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 8px 15px;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .content .row div .card .card-body a {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+    text-decoration: none;
+    color: #000;
+  }
+  .content .row div .card .card-body a:hover {
+    color: #9c0;
+  }
+  .content .row div .card .card-body p,
+  .content .row div .card .card-body strike {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .content .row div .card .card-body span {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+    color: #f81;
+    margin-right: 20px;
+  }
+  .content .row div .card .view_more {
+    height: 55px;
+    position: relative;
+  }
+  .content .row div .card .view_more .btn {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: none;
+    text-align: none;
+    background: #34b;
+    color: #fff;
+    height: 100%;
+    padding: 0px 20px;
+    position: absolute;
+    left: 0;
+    width: 50%;
+  }
+  .content .row div .card .view_more .btn:hover {
+    background: #9c0;
+  }
+  .bar_menu,
+  .close_menu {
+    display: none;
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1205px) {
+  .bar_menu,
+  .close_menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1206px) and (max-width: 1540px) {
+  .content .city div {
+    padding: 0px;
+    position: relative;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  .content .city div img {
+    height: 430px;
+  }
+}
+
+@media (min-width: 1545px) {
+  .container {
+    max-width: 1550px !important;
+  }
+  .content .detail_tour div .mobile {
+    display: none;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,1 @@
+<?php   header('location: http://localhost/travel/index.php?controller=admin&action=manage_bookings'); ?>

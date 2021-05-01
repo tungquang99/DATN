@@ -1,0 +1,199 @@
+form {
+    margin: 10px;
+}
+
+.form_search {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_head {
+    width: 100%;
+    height: 200px !important;
+}
+
+.select_search {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 1.5rem;
+    outline: none;
+    margin: 30px 0px;
+}
+
+.filter_btn {
+    font-size: 2rem !important;
+    border: none;
+    color: #3344bb;
+    outline: none;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.filter_btn:hover {
+    color: #99cc00;
+}
+
+.info {
+    background-color: #fff !important;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.info > h2 {
+    padding: 10px 20px;
+    background: #99cc00;
+    color: #fff;
+    font-weight: bold;
+}
+
+.info > h2 > .stt {
+    padding: 2px 8px;
+    text-align: center;
+    margin-right: 10px;
+    background: #fff;
+    color: #99cc00;
+    font-weight: bold;
+    border-radius: 100%;
+}
+
+.info_tour > img,
+.info_tour > h3,
+.info_tour > span,
+.info_tour > .total_sum {
+    margin: 10px 15px;
+}
+
+.info_tour > img {
+    width: 90%;
+}
+
+.info_tour > h3 {
+    font-weight: bold;
+}
+
+.info_tour > span,
+.info_tour > .total_sum {
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_tour > .total_sum {
+    padding-bottom: 20px;
+}
+
+.info_tour > span > .cart-quantity-input {
+    width: 50px !important;
+    height: 35px !important;
+    margin-left: 80px;
+    margin-bottom: 0px !important;
+}
+
+.cart-total-price {
+    margin-left: 103px;
+    border: 0px solid #fff !important;
+    background-color: #fff !important;
+    width: 90px !important;
+    cursor: unset !important;
+    pointer-events: none !important;
+}
+
+.info_user > label,
+.info_user > input {
+    font-size: 1.6rem !important;
+}
+
+.info_user > input {
+    height: 40px !important;
+}
+
+.info_user > label,
+.info_user > input,
+.info_user > textarea {
+    width: 90% !important;
+    margin: 5px 15px !important;
+}
+
+.btn_book {
+    margin: 10px 15px !important;
+}
+
+.thanhtoan > h4 {
+    margin: 15px;
+    font-weight: bold;
+    color: red;
+    font-size: 1.8rem;
+}
+
+.thanhtoan > ul {
+    padding: 0px 0px 20px 44px;
+}
+
+.thanhtoan > ul > li {
+    font-size: 1.4rem;
+    padding: 5px 10px;
+}
+
+@media screen and (min-width: 1205px) {
+    .bar_menu,
+    .close_menu {
+        display: none;
+    }
+}
+
+.btn_add {
+    background-color: #0066ff !important;
+    border-radius: 5px;
+    font-size: 10px !important;
+}
+
+.disabled {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+.status .btn_wait {
+    background-color: #3092ee !important;
+    box-shadow: none;
+    border: 0px solid #fff;
+    border-radius: 5px;
+}
+
+.status .btn_danger {
+    background-color: rgb(175, 45, 45) !important;
+    box-shadow: none;
+    border: 0px solid #fff;
+    border-radius: 5px;
+}
+
+.fea_dis .btn_success,
+.disabled .btn_success {
+    background-color: rgb(25, 180, 25) !important;
+    box-shadow: none;
+    border: 0px solid #fff;
+    border-radius: 5px;
+}
+
+
+
+.view_web {
+    background-color: #22beef !important;
+    float: left;
+    width: 8%;
+    padding: 1.5em 1em;
+    margin-left: 1%;
+    text-align: center;
+}
+
+.view_web > .link_website,
+.view_web > .link_website > .glyphicon {
+    color: #fff;
+    font-weight: bold;
+}
+
+#menu > li > .link_item.active {
+    color: #ffffff;
+    background-color: #1b93e1;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    border-left: 4px solid #4a4a4a;
+}

@@ -1,0 +1,688 @@
+@import "main";
+
+/*Iphone*/
+@media screen and (min-width: 320px) and (max-width: 739px) {
+  .header {
+    height: 470px;
+    .navbar {
+      z-index: 999;
+      .container {
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          .logo {
+            width: 120px;
+            height: 88px;
+          }
+        }
+        .bar_menu {
+          position: absolute;
+          left: 10%;
+          top: 10%;
+          display: block;
+          color: $white;
+          font-size: 2.5rem;
+          line-height: 100px;
+          cursor: pointer;
+        }
+        .search {
+          position: absolute;
+          right: 10%;
+          top: 10%;
+          display: block;
+          color: $white;
+          font-size: 2.5rem;
+          line-height: 100px;
+          cursor: pointer;
+        }
+        .navbar-collapse {
+          z-index: 9999;
+          position: absolute;
+          width: 100%;
+          top: 0%;
+          left: 50%;
+          transform: translate(-50%, -100%);
+          background-color: rgba($color: $white, $alpha: 1);
+          transition: 0.8s ease-in-out;
+          min-height: 900px;
+          .navbar-nav {
+            li {
+              a {
+                @include font(1.8rem, bold, 80px, center);
+                padding: 0 15px;
+                color: $black;
+                &:hover {
+                  color: $primary;
+                }
+              }
+            }
+          }
+          .close_menu {
+            font-size: 2.5rem;
+            color: $black;
+            position: fixed;
+            top: 22px;
+            right: 22px;
+            cursor: pointer;
+          }
+        }
+        .menu.show {
+          z-index: 9999;
+          animation: dropdown 0.8s;
+          transform: translate(-50%, 0%);
+        }
+        @keyframes dropdown {
+          form {
+            opacity: 0;
+            visibility: hidden;
+          }
+          to {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+    .slide {
+      z-index: 1;
+      .carousel-inner {
+        .carousel-item {
+          .bg {
+            height: 270px;
+          }
+          img {
+            height: 270px;
+          }
+          .carousel-caption {
+            display: none;
+          }
+        }
+      }
+    }
+    .search_tour {
+      position: absolute;
+      bottom: 0%;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 111;
+      select,
+      .btn_search {
+        box-shadow: none !important;
+        outline: none !important;
+        border-color: rgba(0, 0, 0, 0.1);
+        font-size: 1.5rem;
+        height: 50px;
+      }
+      .btn_search {
+        padding-bottom: 6px;
+        font-size: 1.8rem;
+        background: $primary;
+        color: $white;
+        border: 0px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: "Piedra", cursive;
+      }
+    }
+  }
+  .header_head {
+    width: 100%;
+    height: 170px;
+  }
+  .body {
+    .feature_new {
+      .limit_tour {
+        .row {
+          div {
+            .card {
+              width: 264px;
+            }
+          }
+        }
+      }
+    }
+    .city {
+      div {
+        .city_body {
+          display: none;
+        }
+      }
+      &:hover .destination_tour {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .content {
+    padding-left: 20px;
+    h1 {
+      @include font(2.5rem, bold, none, none);
+    }
+    i {
+      @include font(1.6rem, bold, none, none);
+    }
+    p {
+      @include font(1.5rem, 400, none, none);
+    }
+    p:nth-child(3) {
+      margin-top: 30px;
+    }
+    .detail_tour {
+      div {
+        .desktop {
+          display: none;
+        }
+      }
+    }
+  }
+  .about {
+    .row {
+      div {
+        img {
+          width: 277px;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  .view_all_tour {
+    display: none;
+  }
+  .fa-chevron-up {
+    font-size: 1.8rem;
+    font-weight: none;
+    line-height: none;
+    text-align: none;
+    padding: 10px 12px;
+    background: #34b;
+    color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    right: 3%;
+    bottom: 100px;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 9999;
+  }
+}
+/*Tablet */
+@media screen and (min-width: 739px) and (max-width: 1023px) {
+  .header {
+    height: 770px;
+    .navbar {
+      z-index: 999;
+      .container {
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          .logo {
+            width: 200px;
+            height: 135px;
+          }
+        }
+        .bar_menu {
+          position: absolute;
+          left: 10%;
+          top: 28%;
+          display: block;
+          color: $white;
+          font-size: 2.5rem;
+          line-height: 100px;
+          cursor: pointer;
+        }
+        .search {
+          position: absolute;
+          right: 10%;
+          top: 28%;
+          display: block;
+          color: $white;
+          font-size: 2.5rem;
+          line-height: 100px;
+          cursor: pointer;
+        }
+        .navbar-collapse {
+          z-index: 999;
+          position: absolute;
+          width: 100%;
+          top: 0%;
+          left: 50%;
+          transform: translate(-50%, -100%);
+          background-color: rgba($color: $white, $alpha: 1);
+          transition: 0.8s ease-in-out;
+
+          min-height: 900px;
+          .navbar-nav {
+            li {
+              a {
+                @include font(1.8rem, bold, 100px, center);
+                padding: 0 15px;
+                color: $black;
+                &:hover {
+                  color: $primary;
+                }
+              }
+            }
+          }
+          .close_menu {
+            font-size: 2.5rem;
+            color: $black;
+            position: fixed;
+            top: 32px;
+            right: 30px;
+            cursor: pointer;
+          }
+        }
+        .menu.show {
+          animation: dropdown 0.8s;
+          transform: translate(-50%, 0%);
+        }
+        @keyframes dropdown {
+          form {
+            opacity: 0;
+            visibility: hidden;
+          }
+          to {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+    .slide {
+      z-index: 1;
+      .carousel-inner {
+        .carousel-item {
+          .bg {
+            height: 570px;
+          }
+          img {
+            height: 570px;
+          }
+        }
+      }
+    }
+    .search_tour {
+      position: absolute;
+      bottom: 0%;
+      top: 78%;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 111;
+      select,
+      .btn_search {
+        box-shadow: none !important;
+        outline: none !important;
+        border-color: rgba(0, 0, 0, 0.1);
+        font-size: 1.5rem;
+        height: 50px;
+      }
+      .btn_search {
+        padding-bottom: 6px;
+        font-size: 1.8rem;
+        background: $primary;
+        color: $white;
+        border: 0px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: "Piedra", cursive;
+      }
+    }
+  }
+  .header_head {
+    width: 100%;
+    height: 180px;
+  }
+  .body {
+    .feature_new {
+      .limit_tour {
+        .row {
+          div {
+            .card {
+              width: 330px;
+            }
+          }
+        }
+      }
+    }
+    .city {
+      div {
+        .city_body {
+          display: none;
+        }
+      }
+      &:hover .destination_tour {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .content {
+    padding-left: 20px;
+    h1 {
+      @include font(2.5rem, bold, none, none);
+    }
+    i {
+      @include font(1.6rem, bold, none, none);
+    }
+    p {
+      @include font(1.5rem, 400, none, none);
+    }
+    p:nth-child(3) {
+      margin-top: 30px;
+    }
+    .city {
+      div {
+        padding: 0px;
+        position: relative;
+        transition: 0.5s ease-in-out;
+        overflow: hidden;
+        img {
+          height: 500px;
+          width: 100%;
+        }
+        .destination_tour {
+          background: $white;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          padding: 8px 15px;
+          font-size: 1.3rem;
+          color: rgba(0, 0, 0, 0.5);
+        }
+        .city_body {
+          background: rgba(0, 0, 0, 0.3);
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          color: $white;
+          padding: 30px;
+          opacity: 0;
+          visibility: hidden;
+          h2 {
+            @include font(3rem, bold, none, none);
+          }
+          p {
+            @include font(1.8rem, 400, none, none);
+          }
+          .btn {
+            padding: 10px 20px;
+            @include font(1.5rem, bold, none, none);
+            position: absolute;
+            bottom: 20%;
+          }
+        }
+        &:hover .destination_tour {
+          opacity: 0;
+          visibility: hidden;
+        }
+        &:hover .city_body {
+          animation: city_dropup 1s;
+          opacity: 1;
+          visibility: visible;
+        }
+        @keyframes city_dropup {
+          from {
+            transform: translateY(100%);
+          }
+          to {
+            transform: translateY(0%);
+          }
+        }
+      }
+    }
+    .row {
+      div {
+        .card {
+          width: 350px;
+          height: 438px;
+          border: 0.5px solid rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          &:hover img {
+            transform: scale(1.2);
+          }
+          .card-img {
+            position: relative;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              transition: 0.3s ease-in-out;
+            }
+          }
+          .destination_tour {
+            background: $white;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 8px 15px;
+            font-size: 1.3rem;
+            color: rgba(0, 0, 0, 0.5);
+          }
+          .card-body {
+            a {
+              @include font(2.2rem, bold, none, none);
+              text-decoration: none;
+              color: $black;
+              &:hover {
+                color: $primary;
+              }
+            }
+            p,
+            strike {
+              @include font(1.5rem, bold, none, none);
+              color: rgba(0, 0, 0, 0.5);
+            }
+            span {
+              @include font(2.2rem, bold, none, none);
+              color: #f81;
+              margin-right: 20px;
+            }
+          }
+          .view_more {
+            height: 55px;
+            position: relative;
+            .btn {
+              @include font(1.7rem, bold, none, none);
+              background: #34b;
+              color: $white;
+              height: 100%;
+              padding: 0px 20px;
+              position: absolute;
+              left: 0;
+              width: 50%;
+              &:hover {
+                background: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+    .detail_tour {
+      div {
+        .desktop {
+          display: none;
+        }
+      }
+    }
+  }
+}
+/*PC màn hình nhỏ*/
+@media screen and (min-width: 1024px) and (max-width: 1204px) {
+  .header {
+    height: 770px;
+    .slide {
+      .carousel-inner {
+        .carousel-item {
+          .bg {
+            height: 770px;
+          }
+          img {
+            height: 770px;
+          }
+        }
+      }
+    }
+  }
+  .header_head {
+    width: 100%;
+    height: 170px;
+  }
+  .about {
+    .row {
+      div {
+        img {
+          width: 450px;
+          margin-top: 90px;
+        }
+      }
+    }
+  }
+  .body {
+    .feature_new {
+      .limit_tour {
+        .row {
+          div {
+            .card {
+              width: 435px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .content {
+    padding-left: 20px;
+    h1 {
+      @include font(2.5rem, bold, none, none);
+    }
+    i {
+      @include font(1.6rem, bold, none, none);
+    }
+    p {
+      @include font(1.5rem, 400, none, none);
+    }
+    p:nth-child(3) {
+      margin-top: 30px;
+    }
+    .row {
+      div {
+        .card {
+          width: 305px;
+          height: 438px;
+          border: 0.5px solid rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          &:hover img {
+            transform: scale(1.2);
+          }
+          .card-img {
+            position: relative;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              transition: 0.3s ease-in-out;
+            }
+          }
+          .destination_tour {
+            background: $white;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 8px 15px;
+            font-size: 1.3rem;
+            color: rgba(0, 0, 0, 0.5);
+          }
+          .card-body {
+            a {
+              @include font(2.2rem, bold, none, none);
+              text-decoration: none;
+              color: $black;
+              &:hover {
+                color: $primary;
+              }
+            }
+            p,
+            strike {
+              @include font(1.5rem, bold, none, none);
+              color: rgba(0, 0, 0, 0.5);
+            }
+            span {
+              @include font(2.2rem, bold, none, none);
+              color: #f81;
+              margin-right: 20px;
+            }
+          }
+          .view_more {
+            height: 55px;
+            position: relative;
+            .btn {
+              @include font(1.7rem, bold, none, none);
+              background: #34b;
+              color: $white;
+              height: 100%;
+              padding: 0px 20px;
+              position: absolute;
+              left: 0;
+              width: 50%;
+              &:hover {
+                background: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bar_menu,
+  .close_menu {
+    display: none;
+  }
+}
+/*Desktop*/
+@media screen and (min-width: 1205px) {
+  .bar_menu,
+  .close_menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1206px) and (max-width: 1540px) {
+  .content {
+    .city {
+      div {
+        padding: 0px;
+        position: relative;
+        transition: 0.5s ease-in-out;
+        overflow: hidden;
+        margin: 10px 0;
+        img {
+          height: 430px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1545px) {
+  .container {
+    max-width: 1550px !important;
+  }
+  .content {
+    .detail_tour {
+      div {
+        .mobile {
+          display: none;
+        }
+      }
+    }
+  }
+}
